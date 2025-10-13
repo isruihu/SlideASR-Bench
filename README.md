@@ -37,7 +37,7 @@ CUDA_VISIBLE_DEVICES=0,1 python run.py --model {MODEL_NAME} --dataset SlideASR-S
 
 ## Evaluation
 ```shell
-bash slide_asr/SlideASR-Bench/evaluation/evaluate.sh {MODEL_NAME}
+bash evaluation/evaluate.sh {MODEL_NAME}
 ```
 
 ## Acknowledgement

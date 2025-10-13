@@ -1,6 +1,6 @@
 eval_results/
-data/
-resource/
+resource/*
+!resource/.gitkeep
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

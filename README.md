@@ -8,7 +8,9 @@
 Automatic speech recognition (ASR) systems often struggle with domain-specific terminology, especially in specialized settings such as academic lectures. To address this, we define the SlideASR task, which leverages the rich visual information from presentation slides to improve transcription accuracy. Existing pipeline methods for this task tend to be complex and underperform. Although omni-modal large language models (OLLMs) provide a promising end-to-end framework, they frequently fail in practice by degenerating into simple optical character recognition (OCR) systems. To overcome this, we propose Visually-Anchored Policy Optimization (VAPO), a novel post-training method designed to control the model's reasoning process. Drawing on the Chain-of-Thought reasoning paradigm, VAPO enforces a structured "Look before Transcription" procedure using a <think><answer> format. Specifically, the model first performs OCR on the slide content within the think step, then generates the transcription by referencing this recognized visual information in the answer step. This reasoning process is optimized via reinforcement learning with four distinct rewards targeting format compliance, OCR accuracy, ASR quality, and visual anchoring consistency. To support further research, we construct SlideASR-Bench, a new entity-rich benchmark consisting of a synthetic dataset for training and testing, and a challenging real-world set for evaluation. Extensive experiments demonstrate that VAPO significantly improves recognition of domain-specific terms, establishing an effective end-to-end paradigm for SlideASR.
 
 ## Download SlideASR-Bench Data  
-The SildeASR-Bench dataset is now available for download at [🤗Huggingface🤗](https://huggingface.co/datasets/RUIH/SlideASR-Bench). 
+The SildeASR-Bench data is now available for download at [🤗Huggingface🤗](https://huggingface.co/datasets/RUIH/SlideASR-Bench). 
+
+After the download is complete, place *SlideASR-Bench* data in the `resource` folder.
 
 ## Model
 
@@ -26,7 +28,7 @@ The VAPO models are now available for download.
 pip install -r requirements.txt
 ```
 ### Setup
-Modify the model path in the config.py file.
+Modify the model path in the `config.py` file.
 
 ### Run
 ```shell

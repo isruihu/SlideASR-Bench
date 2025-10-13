@@ -1,6 +1,5 @@
 torch==2.6.0
 transformers==4.53.3
-flash_attn==2.7.4.post1
 torchvision
 
 pandas
@@ -22,3 +21,4 @@ contractions
 editdistance
 loguru
 qwen_omni_utils
+accelerate

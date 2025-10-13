@@ -27,8 +27,15 @@ The VAPO models are now available for download.
 ```shell
 pip install -r requirements.txt
 ```
+Additionally, we recommend using FlashAttention 2 when running with Hugging Face Transformers to reduce GPU memory usage.
+```
+pip install -U flash-attn --no-build-isolation
+```
+
 ### Setup
 Modify the model path in the `config.py` file.
+
+[Optional] If you wish to evaluate under the ***Slide text as context*** setting, please download the [🤗PP-OCRv5_mobile_det](https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_det) and [🤗PP-OCRv5_mobile_rec](https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_rec) models place them in the `resource/PaddlePaddle` folder.
 
 ### Run
 ```shell

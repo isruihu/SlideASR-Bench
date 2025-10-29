@@ -20,5 +20,6 @@ regex
 contractions
 editdistance
 loguru
+openpyxl
 qwen_omni_utils
 accelerate

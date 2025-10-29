@@ -53,13 +53,11 @@ bash evaluation/evaluate.sh {MODEL_NAME}
 
 ## 📚 Citation
 ```
-@article{hu2025vapo,
-      title={Look before Transcription: End-to-End SlideASR with Visually-Anchored Policy Optimization}, 
-      author={Rui Hu and Delai Qiu and Yining Wang and Shengping Liu and Jitao Sang},
-      year={2025},
-      eprint={2510.08618},
-      archivePrefix={arXiv},
-      primaryClass={eess.AS},
-      url={https://arxiv.org/abs/2510.08618}, 
+@article{hu2025look,
+  title={Look before Transcription: End-to-End SlideASR with Visually-Anchored Policy Optimization},
+  author={Hu, Rui and Qiu, Delai and Wang, Yining and Liu, Shengping and Sang, Jitao},
+  journal={arXiv preprint arXiv:2510.08618},
+  year={2025},
+  url={https://arxiv.org/abs/2510.08618}, 
 }
 ```
